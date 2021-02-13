@@ -12,11 +12,12 @@ commavds
 ### how to use linux grep functions to search for files on your windows machine
 searching for "blah blah"
 1. (under windows) cd to where you want to search  
-For examle to cd to D:\crtUsers\Iulia\My_writing (after changing the disk as necesary - e.g. via d: ) simply type:  
+For example to change directory (cd) to D:\crtUsers\Iulia\My_writing (after changing the disk as neccessary - e.g. via d: ) simply type:  
 ```
-cd D:\crtUsers\Iulia\My_writing
+C:\Users\iulia>d:
+D:\>cd \crtUsers\Iulia\My_writing
 ```
-A typycal session looks like this:   
+A typical session looks like this:   
 D:\crtUsers\Iulia\prj\LinuxDockerWindows>cd D:\crtUsers\Iulia\My_writing
 D:\crtUsers\Iulia\My_writing>
 
@@ -64,3 +65,7 @@ docker run ^
 continuumio/miniconda3 ^
 /bin/bash  -c "/opt/conda/bin/conda install jupyter -y --quiet && mkdir /opt/notebooks && /opt/conda/bin/jupyter notebook --notebook-dir=/cntmnt --ip='*' --port=8888 --no-browser"
 ```
+
+
+
+
