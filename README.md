@@ -11,8 +11,8 @@ commavds
 
 ### how to use linux grep functions to search for files on your windows machine
 searching for "blah blah"
-1. (under windows) cd to where you want to search  
-For example to change directory (cd) to D:\crtUsers\Iulia\My_writing (after changing the disk as neccessary - e.g. via d: ) simply type:  
+1. (under windows) change directory (cd) to where you want to search  
+For example to cd to D:\crtUsers\Iulia\My_writing (after changing the disk as neccessary - e.g. via d: ) simply type:  
 ```
 C:\Users\iulia>d:
 D:\>cd \crtUsers\Iulia\My_writing
@@ -50,7 +50,7 @@ docker run ^
 --name miniconda3container01 ^
 -v %cd%:/cntmnt:rw ^
 continuumio/miniconda3 ^
-/bin/bash -c "grep -r /"blah blah/" /cntmnt/*.md "
+/bin/bash -c "grep -rn --with-filename \"blah blah\" /cntmnt/ "
 
 ```
 
