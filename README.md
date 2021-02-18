@@ -64,7 +64,9 @@ docker run ^
 -p 8888:8888  ^
 -v %cd%:/cntmnt:rw ^
 continuumio/miniconda3 ^
-/bin/bash  -c "/opt/conda/bin/conda install jupyter -y --quiet && mkdir /opt/notebooks && /opt/conda/bin/jupyter notebook --notebook-dir=/cntmnt --ip='*' --port=8888 --no-browser --allow-root"
+/bin/bash  -c "/opt/conda/bin/conda install jupyter -y --quiet && mkdir /opt/notebooks && /opt/conda/bin/jupyter notebook --notebook-dir=/cntmnt --ip='*' --port=8888 --no-browser --allow-root
+
+"
 ```
 ghgchc
 
